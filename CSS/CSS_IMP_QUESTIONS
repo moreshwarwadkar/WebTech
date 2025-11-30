@@ -1,0 +1,165 @@
+1. What are Selectors? Explain every type.
+Selectors are used to select HTML elements to apply CSS.
+
+✔ Types of Selectors:
+
+Universal Selector – *
+Selects all elements.
+
+Element Selector – p, h1, div
+Selects by tag name.
+
+ID Selector – #idname
+Selects element with specific id.
+
+Class Selector – .classname
+Selects elements with class.
+
+Group Selector – h1, p, div
+Applies same style to multiple elements.
+
+Attribute Selector – input[type="text"]
+Selects elements by attribute.
+
+Pseudo-class Selector – :hover, :focus
+Selects based on state.
+
+Pseudo-element Selector – ::before, ::after
+Selects part of an element.
+
+2. Difference between Pseudo-Element & Pseudo-Class selectors
+✔ Pseudo-class (:)
+
+Works based on state
+Example:
+:hover, :active, :focus
+
+✔ Pseudo-element (::)
+
+Selects part of the element
+Example:
+::before, ::after, ::first-line, ::selection
+
+3. Difference between em unit & rem unit
+em
+Relative to parent element font-size.
+
+rem
+Relative to root element (html) font-size.
+
+rem is more predictable.
+
+4. What are CSS functions?
+Functions in CSS perform specific tasks.
+Examples:
+
+calc() → Performs calculations
+rgb() / hsl() → Colors
+url() → For images
+var() → For CSS variables
+min(), max(), clamp() → Responsive sizing
+
+5. What is CSS Box Model & what are its elements?
+Box model consists of:
+Content
+Padding
+Border
+Margin
+Used to control layout & spacing.
+
+6. What is float property of CSS?
+float moves an element left or right, allowing text to wrap around it.
+Used mostly for layout before flexbox.
+
+7. Difference between flex & grid
+✔ Flexbox
+One dimension (row OR column)
+Best for alignment
+
+✔ Grid
+Two dimensions (rows AND columns)
+Best for layout design / complex structure
+
+8. What are the flexbox properties & flex-item properties?
+▶ Flex Container Properties
+
+display: flex
+flex-direction
+justify-content
+align-items
+align-content
+flex-wrap
+
+▶ Flex Item Properties
+
+flex-grow
+flex-shrink
+flex-basis
+align-self
+order
+
+9. What are Position properties? Explain z-index.
+✔ Position Values:
+
+static – default
+relative – moves relative to itself
+absolute – positioned inside nearest positioned parent
+fixed – sticks to viewport
+sticky – switches between relative & fixed
+
+✔ z-index
+Controls stacking order (which element comes on top).
+
+10. Difference between:
+(i) Position Fixed vs Sticky
+
+Fixed
+
+Always fixed on the screen
+Does not move on scroll
+Sticky
+Acts relative
+Becomes fixed when reaching scroll threshold
+
+(ii) Absolute vs Relative
+
+Relative
+Moves relative to itself
+Still occupies space
+Absolute
+Removed from normal flow
+Positioned relative to nearest ancestor
+
+11. Difference between: visibility:hidden & display:none
+Property	Element Visible?	Space Occupied?
+display:none	No	No
+visibility:hidden	No	Yes
+
+12. Explain overflow property
+Controls what happens when content overflows.
+
+Values:
+
+visible → default
+hidden → cuts overflow
+scroll → always shows scrollbar
+auto → scrollbar only if needed
+
+13. What is the work of !important?
+Overrides all other CSS rules.
+Highest priority.
+
+Example:
+color: red !important;
+
+14. What are the transform properties we have?
+Common transform functions:
+
+rotate()
+scale()
+translate()
+skew()
+matrix()
+perspective()
+
+Used for animations & effects.
